@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 1vh;
+}
+
+#tudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    width: 50vw;
+}
+
+#sapo{
+    width: 20vw;
+    height: auto;
+    border-radius: 10%;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+#buttons{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    gap: 1vw;
+}
+
+#lista {
+    margin-top: 20px;
+}
+
+#lista div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+
+.pacienteAtendimento {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    font-weight: bold;
+}
+
+.pacienteUrgencia {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.pacienteEspera {
+    background-color: #fff3cd;
+    color: #664d03;
+}
+
+.imgLista {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #ccc;
+}
+
+
+.pacienteAtendimento{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.pacienteUrgencia{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+} 
+
+.pacienteEspera {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+}
+
