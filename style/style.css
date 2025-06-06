@@ -2,34 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+label{
+    font-weight: bold;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    justify-content:baseline;
+    width: 65vw;
     gap: 1vh;
 }
 
+body{
+    background-color: #005323;;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+}
+
 #tudo{
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-self: center;
     justify-content: center;
-    width: 50vw;
-}
-
-#sapo{
-    width: 20vw;
-    height: auto;
-    border-radius: 10%;
+    margin-top: 1vw ;
+    margin-bottom: 1vw ;
+    border-radius: 3%;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    width: 70vw;
 }
 
 #header{
     display: flex;
     align-items: center;
-    justify-content: baseline;
+    width: 70vw;
+    justify-content: space-around;
+}
+
+#sapo{
+    height: 30vh;
+    width: auto;
+    align-self: flex-start;
+    border-radius: 10%;
+    margin-top: 1vh;
+    justify-self: left;
 }
 
 #buttons{
@@ -37,18 +60,42 @@ form{
     display: flex;
     justify-content: right;
     gap: 1vw;
+    margin-right: 5vw;
 }
 
 #lista {
     margin-top: 20px;
+    width: 70vw;
+    display: flex;
+    justify-items: center;
+    justify-self: center;
+    flex-wrap: wrap;
+
 }
 
-#lista div {
+.divAtendimento {
     display: flex;
     align-items: center;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 8px;
+    width: 100%;
+}
+.divUrgencia {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 33.3%;
+}
+.divEspera {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 33.3%;
 }
 
 
@@ -65,7 +112,7 @@ form{
 
 .pacienteEspera {
     background-color: #fff3cd;
-    color: #664d03;
+    color: #4b3800;
 }
 
 .imgLista {
@@ -74,7 +121,7 @@ form{
     object-fit: cover;
     border-radius: 50%;
     margin-right: 15px;
-    border: 2px solid #ccc;
+    border: 2px solid #636363;
 }
 
 

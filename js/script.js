@@ -108,7 +108,7 @@ function atualizarLista() {
         const paciente = JSON.parse(localStorage.getItem(emAtendimento));
         if (paciente) {
             lista.innerHTML += `
-                <div>
+                <div class="divAtendimento">
                     <p class="pacienteAtendimento">
                         <img class="imgLista" src="${paciente.imagem}" alt="Imagem de ${paciente.nome}">
                         ${paciente.nome} (${paciente.hora})
@@ -122,7 +122,7 @@ function atualizarLista() {
         const paciente = JSON.parse(localStorage.getItem(nome));
         if (paciente) {
             lista.innerHTML += `
-                <div>
+                <div class="divUrgencia">
                     <p class="pacienteUrgencia">
                         <img class="imgLista" src="${paciente.imagem}" alt="Imagem de ${paciente.nome}">
                         ${paciente.nome} (${paciente.hora})
@@ -136,7 +136,7 @@ function atualizarLista() {
         const paciente = JSON.parse(localStorage.getItem(nome));
         if (paciente) {
             lista.innerHTML += `
-                <div>
+                <div class="divEspera">
                     <p class="pacienteEspera">
                         <img class="imgLista" src="${paciente.imagem}" alt="Imagem de ${paciente.nome}">
                         ${paciente.nome} (${paciente.hora})
